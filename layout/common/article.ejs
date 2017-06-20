@@ -33,8 +33,6 @@
         <% } %>
         </div>
         <footer class="article-footer">
-            <%- partial('share/index', { post: post }) %>
-            <%- partial('comment/counter', { post: post }) %>
         </footer>
     </div>
     <% if (!index) { %>
@@ -42,6 +40,3 @@
     <% } %>
 </article>
 
-<% if (!index) { %>
-    <%- partial('comment/index') %>
-<% } %>
